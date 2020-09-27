@@ -1,0 +1,16 @@
+include: package:lint/analysis_options.yaml
+
+analyzer:
+  errors:
+    missing_required_param: error
+    missing_return: error
+    must_be_immutable: error
+    todo: ignore
+    deprecated_member_use: ignore
+    type_annotate_public_apis: ignore
+    unnecessary_string_interpolations: ignore
+    non_constant_identifier_names: ignore
+    avoid_print: ignore
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
